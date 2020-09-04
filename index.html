@@ -1,0 +1,433 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#myImg {
+				border-radius: 5px;
+				cursor: pointer;
+				transition: 0.3s;
+			}
+
+			#myImg:hover {
+				opacity: 0.7;
+			}
+
+			.modal {
+				display: none;
+				/* Hidden by default */
+				position: fixed;
+				/* Stay in place */
+				z-index: 1;
+				/* Sit on top */
+				padding-top: 100px;
+				/* Location of the box */
+				left: 0;
+				top: 0;
+				width: 100%;
+				/* Full width */
+				height: 100%;
+				/* Full height */
+				overflow: auto;
+				/* Enable scroll if needed */
+				background-color: rgb(0, 0, 0);
+				/* Fallback color */
+				background-color: rgba(0, 0, 0, 0.9);
+				/* Black w/ opacity */
+			}
+
+			.modal-content {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+			}
+
+			#caption {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+			}
+
+			.modal-content,
+			#caption {
+				animation-name: zoom;
+				animation-duration: 0.6s;
+			}
+
+			@keyframes zoom {
+				from {
+					transform: scale(0)
+				}
+				to {
+					transform: scale(1)
+				}
+			}
+
+			.close {
+				position: absolute;
+				top: 15px;
+				right: 35px;
+				color: #f1f1f1;
+				font-size: 40px;
+				font-weight: bold;
+				transition: 0.3s;
+			}
+
+			.close:hover,
+			.close:focus {
+				color: #bbb;
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			@media only screen and (max-width: 700px) {
+				.modal-content {
+					width: 100%;
+				}
+			}
+
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Ioana Cristea</h1>
+							<p>Computer Science Engineer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+							<br/>
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Ioana</strong>, </br>a computer science enthusiast<br />
+								</h2>
+							</br>
+								<p>I'm really passionate about technology & programming and <br />
+									I'm always seeking to develop my skills and improve my knowledge.</p>
+								<br/>
+
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Read more</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+<!--							<p>-->
+<!--								The following are the most representative projects I have worked on over time.</p>-->
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<div class="image fit">
+											<img class = "myImages" id="myImg" src="images/pic02.jpg" alt="">
+											<!-- The Modal -->
+											<div id="myModal" class="modal">
+												<span class="close">&times;</span>
+												<img class="modal-content" id="img01">
+												<div id="caption"></div>
+											</div>
+										</div>
+										<header>
+											<h3> <a href="https://github.com/ioanac977" target="_blank"><u>Personal planner for route and activity optimization</u></a> - Spring Boot, React, MySQL</h3>
+										</header>
+									</article>
+									<article class="item">
+										<div class="image fit">
+											<img class = "myImages" id="myImg" src="images/pic03.jpg" alt="">
+											<!-- The Modal -->
+											<div id="myModal" class="modal">
+												<span class="close">&times;</span>
+												<img class="modal-content" id="img01">
+												<div id="caption"></div>
+											</div>
+										</div>
+										<header>
+											<h3> <a href="https://github.com/ioanac977/explore_universe_frontend" target="_blank"><u> Explore Solar System </u></a> - Spring Boot, React, MySQL</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<div class="image fit">
+											<img class = "myImages" id="myImg" src="images/pic04.jpg" alt="">
+											<!-- The Modal -->
+											<div id="myModal" class="modal">
+												<span class="close">&times;</span>
+												<img class="modal-content" id="img01">
+												<div id="caption"></div>
+											</div>
+										</div>
+										<header>
+											<h3> <a href="https://bitbucket.org/Ioanac9/medical_monitoring_platform_final_project/src/master/" target="_blank"> <u>
+												Integrated Medical Monitoring Platform </u></a> - Java Spring Boot, React, MySQL, RabbitMQ, gRPC, WebSockets, Docker</h3>
+										</header>
+									</article>
+									<article class="item">
+										<div class="image fit">
+											<img class = "myImages" id="myImg" src="images/pic05.jpg" alt="">
+											<!-- The Modal -->
+											<div id="myModal" class="modal">
+												<span class="close">&times;</span>
+												<img class="modal-content" id="img01">
+												<div id="caption"></div>
+											</div>
+										</div>
+										<header>
+											<h3> <a href="https://github.com/ioanac977" target="_blank"><u>Residential Parking System</u></a> - C#, ASP .Net, MVC, API</h3>
+										</header>
+									</article>
+								</div>
+
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<div class="image fit">
+											<img class = "myImages" id="myImg" src="images/pic06.jpg" alt="">
+											<!-- The Modal -->
+											<div id="myModal" class="modal">
+												<span class="close">&times;</span>
+												<img class="modal-content" id="img01">
+												<div id="caption"></div>
+											</div>
+										</div>
+										<header>
+											<h3> <a href="https://github.com/ioanac977/presentation-resume-template" target="_blank"><u>
+												Bachelor's thesis resume presentation </u></a>- React JS, Laravel6, Django, MySQL</h3>
+										</header>
+									</article>
+									<article class="item">
+										<div class="image fit">
+										<img class = "myImages" id="myImg" src="images/pic07.jpg" alt="">
+										<!-- The Modal -->
+										<div id="myModal" class="modal">
+											<span class="close">&times;</span>
+											<img class="modal-content" id="img01">
+											<div id="caption"></div>
+										</div>
+										</div>
+										<header>
+											<h3> <a href="https://github.com/ioanac977/candy-shop-template" target="_blank"><u>
+												Candy Shop Paradise </u></a>- Django, SQL</h3>
+										</header>
+									</article>
+
+
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+							<div class="row">
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<div class="image fit">
+										<img class = "myImages" id="myImg" src="images/pic08.jpg" alt="">
+										<!-- The Modal -->
+										<div id="myModal" class="modal">
+											<span class="close">&times;</span>
+											<img class="modal-content" id="img01">
+											<div id="caption"></div>
+										</div>
+									</div>
+								</article>
+							</div>
+								<div class="col-4 col-12-mobile">
+
+								<article class="item">
+									<div class="image fit">
+										<img class = "myImages" id="myImg" src="images/pic09.jpg" alt="">
+										<!-- The Modal -->
+										<div id="myModal" class="modal">
+											<span class="close">&times;</span>
+											<img class="modal-content" id="img01">
+											<div id="caption"></div>
+										</div>
+									</div>
+								</article>
+							</div>
+								<div class="col-4 col-12-mobile">
+
+									<article class="item">
+										<div class="image fit">
+											<img class = "myImages" id="myImg" src="images/pic10.jpg" alt="">
+											<!-- The Modal -->
+											<div id="myModal" class="modal">
+												<span class="close">&times;</span>
+												<img class="modal-content" id="img01">
+												<div id="caption"></div>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Email : ioanac977@gmail.com</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+			// Get the modal
+			// var modal = document.getElementById("myModal");
+			//
+			// // Get the image and insert it inside the modal - use its "alt" text as a caption
+			// var img = document.getElementById("myImg");
+			// var modalImg = document.getElementById("img01");
+			// var captionText = document.getElementById("caption");
+			// img.onclick = function(){
+			// 	modal.style.display = "block";
+			// 	modalImg.src = this.src;
+			// 	captionText.innerHTML = this.alt;
+			// }
+			//
+			// // Get the <span> element that closes the modal
+			// var span = document.getElementsByClassName("close")[0];
+			//
+			// // When the user clicks on <span> (x), close the modal
+			// span.onclick = function() {
+			// 	modal.style.display = "none";
+			// }
+			var modal = document.getElementById('myModal');
+			// to all images -- note I'm using a class!
+			var images = document.getElementsByClassName('myImages');
+			// the image in the modal
+			var modalImg = document.getElementById("img01");
+			// and the caption in the modal
+			var captionText = document.getElementById("caption");
+
+			// Go through all of the images with our custom class
+			for (var i = 0; i < images.length; i++) {
+				var img = images[i];
+				// and attach our click listener for this image.
+				img.onclick = function(evt) {
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+			}
+
+			var span = document.getElementsByClassName("close")[0];
+
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+		</script>
+
+	</body>
+</html>
