@@ -101,6 +101,7 @@
 			}
 
 		</style>
+		<script type="text/javascript" id="my_id" src="./config.json"></script>
 
 	</head>
 	<body class="is-preload">
@@ -346,15 +347,15 @@
 
 							<p>Email : ioanac977@gmail.com</p>
 
-							<form method="post" action="#">
+							<form id = "frm1" method="post" action="#">
 								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-6 col-12-mobile" id="name-1"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile" id="email-1" ><input type="text" name="email" placeholder="Email" /></div>
 									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
+										<textarea id="message-1" name="message" placeholder="Message"></textarea>
 									</div>
 									<div class="col-12">
-										<input type="submit" value="Send Message" />
+										<input type="button" onclick="sendEmail()" value="Submit">
 									</div>
 								</div>
 							</form>
@@ -382,27 +383,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+		<script type="text/javascript">
+				(function() {
+					emailjs.init(JSON.parse(config).USER_ID);
+				})();
+		</script>
+
 		<script>
-			// Get the modal
-			// var modal = document.getElementById("myModal");
-			//
-			// // Get the image and insert it inside the modal - use its "alt" text as a caption
-			// var img = document.getElementById("myImg");
-			// var modalImg = document.getElementById("img01");
-			// var captionText = document.getElementById("caption");
-			// img.onclick = function(){
-			// 	modal.style.display = "block";
-			// 	modalImg.src = this.src;
-			// 	captionText.innerHTML = this.alt;
-			// }
-			//
-			// // Get the <span> element that closes the modal
-			// var span = document.getElementsByClassName("close")[0];
-			//
-			// // When the user clicks on <span> (x), close the modal
-			// span.onclick = function() {
-			// 	modal.style.display = "none";
-			// }
+
 			var modal = document.getElementById('myModal');
 			// to all images -- note I'm using a class!
 			var images = document.getElementsByClassName('myImages');
@@ -422,11 +411,38 @@
 				}
 			}
 
+			var sendEmailElement = document.getElementsByClassName("four");
+			var message = document.querySelector("#message-1");
+			var senderName = document.querySelector("#name-1 input");
+			var email = document.querySelector("#email-1 input");
+			console.log("sendEmailById",sendEmailElement);
+			console.log("message,name,email", message,senderName,email);
+
+
 			var span = document.getElementsByClassName("close")[0];
 
+			function sendEmail(){
+				var templateParams = {
+					to_name:'Ioana',
+					name:senderName.value,
+					message: message.value,
+					email: email.value,
+				};
+				var CONFIG = JSON.parse(config);
+
+				emailjs.send(CONFIG.SERVICE_ID, CONFIG.TEMPLATE_ID, templateParams)
+						.then(function(response) {
+							console.log('SUCCESS!', response.status, response.text);
+						}, function(error) {
+							console.log('FAILED...', error);
+						});
+
+			}
 			span.onclick = function() {
 				modal.style.display = "none";
 			}
+
+
 		</script>
 
 	</body>

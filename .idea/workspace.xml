@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ba2027d-db31-4620-bcf4-f73b3aee5c95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -25,7 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../imagini" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,6 +37,8 @@
       <option name="presentableId" value="Default" />
       <updated>1599230492123</updated>
       <workItem from="1599230493414" duration="12510000" />
+      <workItem from="1612200849251" duration="3786000" />
+      <workItem from="1612295393093" duration="6467000" />
     </task>
     <servers />
   </component>
@@ -45,17 +46,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599236259977">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612301467765">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599236259977" />
-    <state x="398" y="109" width="740" height="606" key="find.popup" timestamp="1599243737902">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1612301467765" />
+    <state x="93" y="392" width="1350" height="338" key="DiffContextDialog" timestamp="1612301875015">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="398" y="109" width="740" height="606" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599243737902" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599233784699">
+    <state x="93" y="392" width="1350" height="338" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1612301875015" />
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1612297050938">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599233784699" />
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1612297050938" />
   </component>
 </project>
