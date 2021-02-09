@@ -101,7 +101,6 @@
 			}
 
 		</style>
-		<script type="text/javascript" id="my_id" src="./config.json"></script>
 
 	</head>
 	<body class="is-preload">
@@ -386,7 +385,7 @@
 		<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 		<script type="text/javascript">
 				(function() {
-					emailjs.init(JSON.parse(config).USER_ID);
+					emailjs.init("user_HVvzW1pugh1HvWsDFaSRB");
 				})();
 		</script>
 
@@ -428,7 +427,6 @@
 					message: message.value,
 					email: email.value,
 				};
-				var CONFIG = JSON.parse(config);
 
 				emailjs.send("service_whsgjj8", "template_1nloudc", templateParams)
 						.then(function(response) {
