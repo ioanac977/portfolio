@@ -430,7 +430,7 @@
 				};
 				var CONFIG = JSON.parse(config);
 
-				emailjs.send(CONFIG.SERVICE_ID, CONFIG.TEMPLATE_ID, templateParams)
+				emailjs.send("service_whsgjj8", "template_1nloudc", templateParams)
 						.then(function(response) {
 							console.log('SUCCESS!', response.status, response.text);
 						}, function(error) {
